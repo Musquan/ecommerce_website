@@ -1,0 +1,130 @@
+.ProductCardContainer {
+  max-width: 70%;
+  margin: 20px auto;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 4px 8px 2px rgba(45, 45, 45, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.ContainerForTheMainImage {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  object-fit: scale-down;
+  width: 96%;
+  border-bottom: 2px solid rgb(230, 229, 229);
+}
+
+.MainImageTag {
+  width: 500px;
+  height: 300px;
+  object-fit: scale-down;
+
+}
+
+.SideImagesContainer {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+
+}
+
+.SecondaryImageTag {
+  width: auto;
+  height: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 3px;
+
+}
+
+.SecondaryImageTag:hover {
+  transform: scale(1.1);
+
+}
+
+
+.SideImage.active {
+  border: 2px solid #F15A22;
+}
+
+
+
+.ContainerForProductInformation {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.IndividualProductSecondTitleTag {
+  color: #333;
+  font-size: 1rem;
+  font-weight: normal;
+  margin: -10px 0;
+  line-height: 1.2;
+
+}
+
+.ContainerForProductInformation h1:first-of-type {
+  color: #203c5c;
+  font-weight: bold;
+  margin: none;
+}
+
+.ContainerForProductInformation h1:last-of-type {
+  font-style: italic;
+}
+
+.quantityInput {
+  width: 60px;
+  height: 35px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+
+.ContainerForTheItemCountButtonsAddToCartAndWishList {
+  padding-bottom: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.addToCartButton,
+.addToWishlistButton {
+  background-color: rgb(227, 95, 0);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.addToCartButton:hover,
+.addToWishlistButton:hover {
+  background-color: #21252a;
+}

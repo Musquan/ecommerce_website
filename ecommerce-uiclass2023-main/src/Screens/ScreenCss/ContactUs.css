@@ -1,0 +1,152 @@
+.contactUsPage {
+  display: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.contactUs-backButton {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.contactUs-contentContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+
+
+}
+
+.contactUs-welcomeSection p {
+  font-size: 2.2rem;
+  color: #0C2340;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contactUs-contactInfoSection {
+  flex-basis: 25%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  align-self: start;
+}
+
+.contactUs-contactInfoSection p {
+  font-size: 0.9rem;
+}
+
+.contactUs-contactFormSection {
+  flex-basis: 48%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.contactUsPage button {
+  padding: 10px 20px;
+  background-color: #F15A22;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contactUsPage button:hover {
+  background-color: rgba(241, 91, 36, 0.8);
+}
+
+.contactUsPage h1,
+.contactUsPage h2,
+.contactUsPage p {
+  margin: 10px 0;
+}
+
+.contactUs-contactFormSection h1 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.contactUs-contactFormSection p {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.contactUsPage form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contactUs-form-group {
+  margin-bottom: 15px;
+}
+
+.contactUsPage label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contactUsPage input[type="text"],
+.contactUsPage input[type="email"],
+.contactUsPage textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactUs-sendButton {
+  padding: 10px 20px;
+  background-color: #F15A22;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.contactUs-sendButton:hover {
+  background-color: rgba(241, 91, 36, 0.8);
+}
+
+@media (max-width: 768px) {
+  .contactUs-contentContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactUs-contactInfoSection {
+    flex-basis: 100%;
+    align-self: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contactUs-contactFormSection {
+    flex-basis: 100%;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+
+  .contactUs-backButton {
+    align-self: center;
+  }
+}

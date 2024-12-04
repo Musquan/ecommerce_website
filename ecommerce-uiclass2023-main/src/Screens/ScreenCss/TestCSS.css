@@ -1,0 +1,279 @@
+.ForAllTheInformationInTestScreen {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.ForMainTitleOnly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.ForMainTitleOnlyTitleH1 {
+    font-size: 40px;
+}
+
+.ForImageSliderBannerOnly {
+    padding: 20px;
+    width: 100%;
+}
+
+.ForTheSideBarAndProducts {
+    display: flex;
+    width: 100%;
+}
+
+.ForSideBar {
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.ForSideBar h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.ForSideBar ul {
+    list-style: none;
+    padding-left: 14px;
+}
+
+.ForSideBar li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.ForSideBar li:hover {
+    color: #0C2340;
+    background-color: #e9e9eb;
+    transform: translateX(5px);
+}
+
+.ForSideBar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.ForSideBar::-webkit-scrollbar-thumb {
+    background-color: #9e9e9f;
+    border-radius: 4px;
+}
+
+.ForSideBar::-webkit-scrollbar-track {
+    background-color: #f0f0f2;
+}
+
+.TestScreenContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.ConatinerForSearchBoxAndFilter {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.SearchBar {
+    margin-bottom: 30px;
+    width: 80%;
+    margin-right: 10px;
+    position: relative;
+}
+
+.SearchBar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 1%;
+    top: 20%;
+    transform: translateY(-50%);
+    color: #0C2340;
+    cursor: pointer;
+}
+
+.SortBy {
+    margin-bottom: 20px;
+    position: relative;
+    /* To position the options list absolutely */
+}
+
+.SortBy label {
+    margin-right: 5px;
+}
+
+.SortBy .combobox {
+    position: relative;
+}
+
+.SortBy .combobox-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.SortBy input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+
+.SortBy .arrow {
+    cursor: pointer;
+    padding: 8px;
+    background-color: #e9e9eb;
+    border-left: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+.SortBy .arrow::before {
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #0C2340;
+    /* Adjust color as needed */
+    display: inline-block;
+    margin-right: 5px;
+    transition: transform 0.3s ease;
+}
+
+.SortBy .arrow.open::before {
+    transform: rotate(180deg);
+}
+
+.SortBy ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1000;
+    /* Ensures the list appears above other content */
+    max-height: 200px;
+    /* Adjust as needed */
+    overflow-y: auto;
+    /* Adds scroll for many options */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: for better visibility */
+}
+
+.SortBy li {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.SortBy li:hover {
+    background-color: #f0f0f0;
+}
+
+.SampleProductsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: auto;
+}
+
+.TitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TitleContainerPOnly {
+    padding-top: 20px;
+    font-size: 30px;
+    color: #0C2340;
+}
+
+.ProductCard {
+    flex-basis: calc(25% - 10px);
+    margin-bottom: 20px;
+}
+
+.Pagination {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ButtonForPagination {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    background-color: #a9b4c1;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Pagination button:hover {
+    background-color: #F15A22;
+}
+
+@media screen and (max-width: 768px) {
+    .ForTheSideBarAndProducts {
+        flex-direction: column;
+    }
+
+    .ForSideBar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .TestScreenContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .SampleProductsContainer {
+        justify-content: center;
+    }
+
+    .ProductCard {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ForMainTitleOnlyTitleH1 {
+        font-size: 24px;
+    }
+
+    .ProductCard {
+        flex-basis: 100%;
+    }
+}

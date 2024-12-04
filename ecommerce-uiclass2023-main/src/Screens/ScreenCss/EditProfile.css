@@ -1,0 +1,128 @@
+/* EditProfile.css */
+.MainContainerForEditProfileScreen {
+  text-align: left;
+}
+
+.WelcomeSection {
+  text-align: left;
+}
+
+.ContentContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.ManageAccountSectionEdit {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  width: 200px;
+  height: 530px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.EditProfileSection {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.ManageAccountSectionEdit h2,
+.EditProfileSection h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.EditProfileButtons {
+  background-color: rgb(241, 90, 34);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+}
+
+.CenteredButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.CenteredButtons ul {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.cancel-button{
+  background-color: rgb(241, 90, 34);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+}
+
+.save-button{
+  background-color: rgb(241, 90, 34);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 150px;
+  height: 40px;
+  align-items: center;
+}
+
+/* Add media queries for responsive design */
+@media (max-width: 900px) {
+  .LeftSection {
+    flex-direction: column;
+  }
+
+  .ManageAccountSectionEdit,
+  .EditProfileSection {
+    width: 80%;
+  }
+
+  .EditProfileSection {
+    padding: 20px;
+  }
+}

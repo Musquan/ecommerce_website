@@ -1,0 +1,67 @@
+/* PrivacyPolicy.css */
+
+h1 {
+  text-align: left; /* Adjust text alignment as needed */
+  font-size: 16px;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* Style specific sections or elements within the content as needed */
+h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.privacyPolicyContainer {
+  margin: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+ 
+}
+.privacyTitle{
+  text-align: center;
+  color:#F15A22;
+  font-size: 2.2rem;
+}
+.privacy-backButton {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  color: white;
+  background-color: #F15A22;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+.privacy-backButton:hover{
+  background-color: rgba(241, 91, 36, 0.8);
+}
+
+.privacyPolicyContainer h2 {
+  font-size: 1rem;
+  margin-top: 20px;
+  color:#0C2340;
+}
+
+.privacyPolicyContainer p, .privacyPolicyContainer ul {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.privacyPolicyContainer ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  
+}
+
+.privacyPolicyContainer li {
+  margin-bottom: 10px;
+}

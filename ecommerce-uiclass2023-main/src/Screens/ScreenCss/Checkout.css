@@ -1,0 +1,136 @@
+.MainContainerForCheckoutScreen{
+    overflow: auto;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.MainContainerForCheckoutScreen h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #F15A22;
+}
+
+.MainContainerForCheckoutScreen h2{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color:#0C2340;
+}
+
+
+.ContainerForCheckoutScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:  auto;
+   
+}
+
+
+.required-label::after {
+    content: ' *';
+    color: red;
+  }
+  .product-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    margin-bottom: 5px; 
+}
+
+  .product-image img{
+    height:50px;
+    display: flex;
+  }
+  .product-image span{
+    padding-top:10px;
+    padding-left:30px;
+    
+  }
+.CheckoutForm {
+    margin:auto;
+    padding-top: auto;
+    display: flex;
+    width: 90%;
+}
+.itemPrice{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.checkout-billing-info,.checkout-order-summary{
+    display: block;
+    flex: 1;
+}
+
+.checkout-billing-info h2{
+    text-align: center;
+}
+
+.checkout-separator{
+    border-top: 1px solid #ccc; /* Add a horizontal line separator */
+    padding-top: 10px;
+}
+.CheckoutForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-form-group {
+    margin-bottom: 10px;
+}
+
+.checkout-form-group input {
+    padding: 5px;
+    width: 100%;
+    border: 0.01px solid #e6e4e4;
+    background-color: rgb(245, 248, 250);
+}
+
+.checkout-ul {
+    list-style: none;
+    padding: 0;
+}
+
+.checkout-li, .checkout-totalprice, .checkout-shipping-fee,.checkout-total  {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-payment-method {
+    margin-top: 20px;
+    
+}
+
+.PlaceOrderButton {
+    align-self: flex-start;
+    margin: 20px;
+    padding: 10px 15px;
+    color: white;
+    background-color: #F15A22;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.PlaceOrderButton:hover {
+    background-color: rgba(241, 91, 36, 0.8);
+}
+
+
+@media (max-width: 900px) {
+    .CheckoutForm {
+        flex-direction: column; 
+    }
+    
+    .checkout-billing-info, .checkout-order-summary {
+        width: 100%; 
+    }
+
+    .checkout-billing-info {
+        padding: 10px;
+    }
+}

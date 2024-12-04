@@ -1,0 +1,30 @@
+.footerAllContainer {
+    background-color: #0C2340;
+    color: #F15A22;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .FooterList {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .FooterList li {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .FooterList li::after {
+    content: ' |';
+    margin-left: 10px;
+  }
+
+  .FooterLinks{
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent element */
+  }
+  

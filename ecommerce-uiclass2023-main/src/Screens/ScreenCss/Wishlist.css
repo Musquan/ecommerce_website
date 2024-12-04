@@ -1,0 +1,95 @@
+ .MainContainerForWishlistScreen {
+    padding: 20px; 
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .ContainerForNavBar {
+    width: 100%;
+    background-color: #333;
+  }
+  
+  .MainContainerForWishlistScreen h1 {
+    font-size: 2em;
+  }
+  
+  .ProductsInWishlistContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr)); 
+    gap: 20px;
+  }
+  
+  .WishlistProductCard {
+    display: flex;
+    border: 1px solid #ddd;
+    margin-left: 20px;
+    height: auto;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .WishlistProductInfo h2,
+  .WishlistProductInfo p {
+    margin: 0;
+    margin-bottom: 5px;
+  } 
+  
+  .WishlistProductImage {
+    width: 20%;
+  }
+  
+  .WishlistProductInfo {
+    padding: 15px;
+  }
+  
+  .WishlistProductInfoh2 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .RemoveWishlistItemButton {
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    right: 1%;
+    top: 1%;
+    position: absolute;
+  }
+  
+  .WishlistAddToCartButton{
+    background-color: rgb(241, 90, 34);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 1%;
+    bottom: 10px;
+  }
+
+  .RemoveWishlistItemButton:hover  {
+    background-color: #f2f2f2;
+  }
+
+  .WishlistAddToCartButton:hover {
+  background-color: #21252a;
+}
+
+@media screen and (max-width: 768px) {
+  .ProductsInWishlistContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .WishlistProductCard {
+    width: 100%;
+    margin-left: 0;
+  }
+}

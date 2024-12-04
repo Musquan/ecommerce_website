@@ -1,0 +1,129 @@
+/* ProductCartScreen.css */
+
+   .MainContainerForProductCartScreen {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .MainContainerForProductCartScreen h1{
+    font-size: 2em;
+  }
+  
+  .ProductsInCartContainer {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ProductCardcart {
+    display: flex;
+    border: 1px solid #ddd;
+    margin-left: 20px;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-right: 22px;
+  }
+
+  .ProductImageContainer{
+    width: 10%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ProductImageCart {
+    width: 100%;
+  }
+
+  .ProductInfoCart {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 60%; 
+    text-align: justify;
+  }
+  
+  .ProductInfoCart h2,
+  .ProductInfoCart p {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .ProductPriceCart {
+    margin-left: 10px;
+    width: 16%;
+    text-align: justify;
+    padding: 20px;
+  }
+  
+  .QuantityCart {
+    width: 10%;
+    text-align: justify;
+    padding: 20px;
+  }
+
+  .ProductTotalCart{
+    margin-left: 10px;
+    width: 15%;
+    text-align: justify;
+    padding: 20px;
+  }
+  
+  .RemoveItemButtonCart {
+    background-color: transparent;;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    right: 20px; 
+    position: absolute;
+  }
+  
+  .CartSummary {
+    width: 30%;
+    padding: 20px;
+    margin-left: auto;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .SummaryHeading {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .SummaryDetails {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .CheckoutButton {
+    background-color: rgb(241, 90, 34);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ProductsInCartContainer {
+      flex-direction: column;
+    }
+  
+    .ProductCardcart {
+      margin-left: 0;
+    }
+  }
