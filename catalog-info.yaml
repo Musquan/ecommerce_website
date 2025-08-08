@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ecommerce_website
+  description: A comprehensive e-commerce platform developed by Musquan, designed to provide a seamless online shopping experience.
+  annotations:
+    github.com/project-slug: Musquan/ecommerce_website
+    jira/project-key: SCRUM
+    jira/label: backstage-component:ecommerce_website
+spec:
+  type: application
+  owner: ICS
+  lifecycle: production
